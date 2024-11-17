@@ -3,7 +3,7 @@
 
 This repository contains the code and resources an example project with snakemake. The project focuses on utilizing machine learning models to preprocess and analyze the Iris dataset, evaluate model performance, and visualize the results.
 
-![DAG](output/dag.png)
+![DAG](train_model_example/dag.png)
 
 ```plaintext
 .
