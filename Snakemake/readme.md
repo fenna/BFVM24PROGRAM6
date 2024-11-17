@@ -75,7 +75,7 @@ pip install snakemake
  7. To run all at once at available cores
  ```
  snakemake -s main.smk --cores 4
- ``
+ ```
     
 
 ## Benchmarking
