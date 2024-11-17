@@ -1,9 +1,13 @@
 
-## Project Structure
 
-This repository contains the code and resources an example project with snakemake. The project focuses on utilizing machine learning models to preprocess and analyze the Iris dataset, evaluate model performance, and visualize the results.
+
+This repository contains the code and resources an example project with snakemake. The project focuses on utilizing machine learning models to preprocess and analyze the Iris dataset, evaluate model performance, and visualize the results. The processes of training the model and evaluating the model are paralelized. 
 
 ![DAG](train_model_example/dag.png)
+
+
+## Project Structure
+
 
 ```plaintext
 .
