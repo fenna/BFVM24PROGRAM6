@@ -12,14 +12,15 @@ rule all:
 # Rule to preprocess the Iris dataset
 rule preprocess_data:
     output:
-        processed_data="data/processed_data.csv"
+        train='data/train_data.csv', 
+        test='data/test_data.csv'
     script:
         "scripts/preprocess.py"
 
 # Rule to train each model
 rule train_model:
     input:
-        data="data/processed_data.csv"
+        data="data/train_data.csv"
     output:
         model= output_dir + "models/{model}_model.pkl"
     params:
@@ -33,7 +34,7 @@ rule train_model:
 rule evaluate_model:
     input:
         model=output_dir + "models/{model}_model.pkl",
-        data="data/processed_data.csv"
+        data="data/test_data.csv"
     output:
         temp(output_dir + "{model}_results.txt")
     params:
