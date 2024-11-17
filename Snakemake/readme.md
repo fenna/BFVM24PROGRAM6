@@ -34,6 +34,8 @@ To run this project, you need to have Snakemake installed. You can install snake
 pip install snakemake 
 ```
 
+Create a workdirectory with a subdirectory scripts. Copy the scripts in the script directory and the main.smk in the main directory
+
 ## Usage
 
 You can run rules seperately to test rules
