@@ -41,6 +41,7 @@ pip install snakemake
 
 ## Usage
 
+
 1. **Preprocess the Data**: Run the Snakemake workflow to preprocess the Iris dataset.
     ```sh
     snakemake -s main.smk preprocess_data
@@ -69,8 +70,13 @@ pip install snakemake
 6. **Generate DAG**: Visualize the workflow DAG.
     ```sh
     snakemake -s main.smk --dag | dot -Tpdf > dag.pdf
-    
     ```
+    
+ 7. To run all at once at available cores
+ ```
+ snakemake -s main.smk --cores 4
+ ``
+    
 
 ## Benchmarking
 
