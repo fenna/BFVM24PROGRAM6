@@ -1,35 +1,30 @@
 
 
+This repository contains the code and resources for an example project utilizing Snakemake, a powerful workflow management system. The primary goal of this project is to harness machine learning models for the preprocessing and analysis of the Iris dataset, a classic dataset widely used for demonstrating machine learning techniques.
 
-This repository contains the code and resources an example project with snakemake. The project focuses on utilizing machine learning models to preprocess and analyze the Iris dataset, evaluate model performance, and visualize the results. The processes of training the model and evaluating the model are paralelized. 
+### Key Components of the Project:
+
+1. **Data Preprocessing**:
+   - The project includes scripts to clean and preprocess the Iris dataset. This step ensures that the data is in the required format for machine learning algorithms.
+
+2. **Model Training**:
+   - Various machine learning models are trained on the preprocessed data. 
+
+3. **Model Evaluation**:
+   - After training, the models' performance is evaluated. 
+
+4. **Visualization**:
+   - The project also includes scripts to visualize the results of the analysis. 
+   
+### Parallelization:
+
+Both the training and evaluation of models are parallelized, significantly speeding up the workflow. This is particularly beneficial when dealing with large datasets or complex models, where computation can be time-consuming.
+
 
 ![DAG](train_model_example/dag.png)
 
 
-## Project Structure
 
-
-```plaintext
-.
-├── data
-│   └── processed_data.csv
-├── output
-│   ├── accuracy_plot.png
-│   ├── final_report.csv
-│   ├── benchmarks
-│   │   ├── train_random_forest.txt
-│   │   ├── train_svm.txt
-│   └── models
-│       ├── random_forest_model.pkl
-│       └── svm_model.pkl
-├── scripts
-│   ├── preprocess.py
-│   ├── train_random_forest.py
-│   ├── train_svm.py
-│   ├── evaluate.py
-│   └── plot_results.py
-├── main.smk
-```
 
 ## Installation
 
@@ -41,6 +36,7 @@ pip install snakemake
 
 ## Usage
 
+You can run rules seperately to test rules
 
 1. **Preprocess the Data**: Run the Snakemake workflow to preprocess the Iris dataset.
     ```sh
@@ -73,10 +69,36 @@ pip install snakemake
     ```
     
  7. To run all at once at available cores
- ```
- snakemake -s main.smk --cores 4
- ```
-    
+    ```sh
+    snakemake -s main.smk --cores 4
+    ```
+ 
+ ## Project Structure
+
+After running the pipeline the resulting project structure looks like this
+
+```plaintext
+.
+├── data
+│   └── processed_data.csv
+├── output
+│   ├── accuracy_plot.png
+│   ├── final_report.csv
+│   ├── benchmarks
+│   │   ├── train_random_forest.txt
+│   │   ├── train_svm.txt
+│   └── models
+│       ├── random_forest_model.pkl
+│       └── svm_model.pkl
+├── scripts
+│   ├── preprocess.py
+│   ├── train_random_forest.py
+│   ├── train_svm.py
+│   ├── evaluate.py
+│   └── plot_results.py
+├── main.smk
+```
+
 
 ## Benchmarking
 
