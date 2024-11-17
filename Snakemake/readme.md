@@ -80,7 +80,8 @@ After running the pipeline the resulting project structure looks like this
 ```plaintext
 .
 ├── data
-│   └── processed_data.csv
+│   └── test_.csv
+│   └── train_data.csv
 ├── output
 │   ├── accuracy_plot.png
 │   ├── final_report.csv
