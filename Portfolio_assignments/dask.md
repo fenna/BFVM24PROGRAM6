@@ -24,7 +24,7 @@ You are tasked with building a scalable machine learning pipeline for a lung can
 
 1. **Clinical Data**:
    - **Format**: Excel file containing 89 patient samples.
-   - **Content**: Patient demographics, smoking history, tumor stage, and other clinical variables.
+   - **Content**: Patient tumor source location, tumor stage, and other clinical variables.
    - **Source**: [Lung3.metadata.xls](https://wiki.cancerimagingarchive.net/download/attachments/16056856/Lung3.metadata.xls?version=1&modificationDate=1404237338168&api=v2).
 
 2. **Gene Expression Data**:
@@ -39,14 +39,13 @@ You are tasked with building a scalable machine learning pipeline for a lung can
 #### **1. Getting Started with Dask**
 - Load the clinical and gene expression data using **Dask DataFrames**.
 - Compare the memory usage and loading times with pandas DataFrames.
-- Document why Dask is suitable for this large dataset.
 
 ---
 
 #### **2. Initial Data Preprocessing**
 Write **Dask Delayed** functions to:
-- Handle missing values in the clinical data (e.g., impute missing tumor stage values).
-- Filter low-quality data in the gene expression dataset (e.g., patients with >20% missing values).
+- Handle missing values in the clinical data 
+- Filter low-quality data in the gene expression dataset 
 - Compare the runtime of preprocessing tasks with pandas-based workflows.
 
 ---
@@ -64,7 +63,7 @@ Write **Dask Delayed** functions to:
 #### **4. Further Preprocessing**
 - Normalize numerical features (e.g., gene expression data) using z-score scaling with Dask.
 - Encode the target variable (`TumorSubtype`) as binary (e.g., "1" for Squamous, "0" for others).
-- Split the dataset into training and test sets using **Dask's train_test_split**.
+- Split the dataset into training and test sets using **Dask**.
 
 ---
 
