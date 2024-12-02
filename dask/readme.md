@@ -14,3 +14,10 @@
 ## data 
 
 The data used in the notebook `intro_dask.ipynb` is to be found at assemblix2019:/data/datasets/DS6/cluster_chem
+copy the file `all_nps.txt` to <your workdirectory>/data 
+```
+#split bigfile into smaller files
+cd data
+mkdir all_nps_chunks
+split -l 5000  data/all_nps.txt all_nps_chunks/part_
+``
