@@ -1,0 +1,27 @@
+# Transform your application to a professional deployable application 
+
+## Overview
+
+When you turn a prototype or a personal script into a professional, deployable product, clear and maintainable documentation becomes as essential as the code itself. `Sphinx` is a standard for generating high‑quality documentation for Python projects (and many other languages), and it offers a suite of benefits that align perfectly with modern software‑engineering practices. Using Sphinx transforms documentation from an after‑thought into a maintainable, versioned, and searchable asset that travels with your code from development through Docker packaging and onto Kubernetes deployments. It helps teams ship reliable software faster, reduces onboarding friction, and presents a professional face to users, auditors, and collaborators alike. In this assignment you will refactor your code and generate sphinxs documentation. 
+
+## Learning outcomes
+
+- Modular code design – restructure your project so that components are cleanly separated and readily consumable as APIs.
+- Professional documentation – write expressive docstrings and generate polished, version‑controlled documentation with Sphinx.
+- Toolchain proficiency – gain hands‑on experience with a industry‑standard documentation framework, preparing you for real‑world engineering workflows.
+
+## Deliverabels
+
+- (link to) code repository with the refactored code including sphinx documentation
+- short reflection report 
+
+## Assessment criteria
+
+- Correctness (30%) : code is modulair, <make html> runs without errors
+- Completeness (50%): All modules are documented with examples, a getting started page is added
+- Reflection (20%): Connection with project, personal learning take‑aways
+
+
+
+
+

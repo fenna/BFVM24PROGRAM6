@@ -1,0 +1,25 @@
+# Assignment – ML‑System Monitoring Platform
+
+## Overview
+
+Machine‑learning models in production must be continuously observed for prediction quality, data integrity, service latency, and resource consumption. In this project each team will build a lightweight, end‑to‑end monitoring platform that tracks these four dimensions for a simple model‑serving service (e.g., a scikit‑learn classifier exposed via a FastAPI endpoint).
+
+The goal is to demonstrate that students can:
+
+- instrument code to emit metrics,
+- store and visualise those metrics,
+- detect anomalies (performance drop, data drift, latency spikes, resource exhaustion),
+- alert stakeholders automatically, and
+- document the design choices and trade‑offs.
+
+## Deliverables
+
+- Code repo for monitoring application that reports and stores metrics to be monitor
+- Report Design rationale, why you selected the metric, how you compute each metric, Observed challenges & future improvements
+
+## Assessment criteria
+
+- Functionality (50%): All metric streams are collected, stored, visualised, and generate alerts correctly.
+- Correctness (25%): Metric calculations are sound (e.g., latency measured end‑to‑end, drift computed on comparable feature distributions)
+- Documentation (25%): Clear architecture diagram, well‑written README, and justified technology choices.
+

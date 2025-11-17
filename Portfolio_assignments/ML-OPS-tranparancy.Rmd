@@ -1,0 +1,33 @@
+“Transparent AI: Building a Model Card for Your Machine‑Learning Project”
+
+## Learning Objectives
+
+- Regulatory awareness – Understand the EU AI Act’s transparency obligations for high‑risk AI systems.
+- Documentation skills – Learn how to communicate model purpose, data provenance, performance, and risk in a concise, structured format.
+- Critical evaluation – Identify potential biases, safety concerns, and mitigation strategies for a given AI system.
+- Ethical reasoning – Reflect on societal impact and accountability measures.
+
+## Context
+
+The EU AI Act classifies many AI systems as “high‑risk” and requires providers to supply clear, accessible documentation—often called a model card—that explains what the system does, how it was built, its limitations, and how it should be used responsibly. In this assignment you will create such a document for a machine‑learning model you develop (or an existing open‑source model) and demonstrate how it satisfies the Act’s transparency provisions.
+
+## Deliverables
+
+- Model Card	Structured documentation covering all required sections.	PDF or Markdown (≈ 2–4 pages).
+- Reflection Essay	Short essay (≈ 300‑500 words) discussing how the model card addresses EU AI Act transparency clauses and what gaps remain.	
+- Code Repo	Link to a public repository (GitHub/GitLab) containing the model code, data preprocessing scripts, and a README 
+
+## Assessment criteria
+
+- Completeness (25%): All sections filled, regulatory references included
+- Correctness (25%): Correct description of data, model, metrics; reproducible numbers
+- Critical Analysis (25%): Insightful discussion of risks, bias, mitigation
+- Reflection (25%): Connection to EU AI Act, personal learning take‑aways
+
+## References
+
+Linardatos, Pantelis, Vasilis Papastefanopoulos, and Sotiris Kotsiantis. “Explainable AI: A Review of Machine Learning Interpretability Methods.” Entropy 23, no. 1 (2021). https://doi.org/10.3390/e23010018.
+
+Martinez, D.R. and Kifle, B.M., 2024. Artificial Intelligence: A Systems Approach from Architecture Principles to Deployment. MIT Press.
+
+Mitchell, Margaret, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, and Timnit Gebru. “Model Cards for Model Reporting.” In Proceedings of the Conference on Fairness, Accountability, and Transparency, 220–29. FAT* ’19. New York, NY, USA: Association for Computing Machinery, 2019. https://doi.org/10.1145/3287560.3287596.
